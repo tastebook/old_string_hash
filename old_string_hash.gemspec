@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = "old_string_hash"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
   s.summary = "Old Ruby String hash"
   s.author  = "Surendra Singhi"
   

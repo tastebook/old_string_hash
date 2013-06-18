@@ -1,6 +1,5 @@
 // Include the Ruby headers and goodies
 #include <ruby.h>
-#include <stdio.h>
 
 // Defining a space for information and references about the module to be stored internally
 VALUE OldStringHash = Qnil;
@@ -13,7 +12,6 @@ VALUE method_hash_code(VALUE self, VALUE str);
 
 // The initialization method for this module
 void Init_old_string_hash() {
-  printf("here");
   OldStringHash = rb_define_module("OldStringHash");
   rb_define_method(OldStringHash, "hash_code", method_hash_code, 1); 
 }
