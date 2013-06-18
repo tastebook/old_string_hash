@@ -6,7 +6,8 @@ Gem::Specification.new do |s|
   
   s.files = Dir.glob("ext/**/*.{c,rb}") +
             Dir.glob("lib/**/*.rb")
-  
+
+  s.require_paths = ["lib"]  
   s.extensions << "ext/old_string_hash/extconf.rb"
   
   s.add_development_dependency "rake-compiler"
